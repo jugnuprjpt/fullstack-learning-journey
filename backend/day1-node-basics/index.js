@@ -1,7 +1,32 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-  (res.write("Hello Jugnu"), res.end());
+  // Home Route
+  if (req.url === "/") {
+    res.write("Welcome to Home Page");
+    res.end();
+  }
+
+  // About Route
+  else if (req.url === "/about") {
+    res.write("Welcome to About Page");
+    res.end();
+  }
+
+  // Contact Route
+  else if (req.url === "/contact") {
+    res.write("Welcome to Contact Page");
+    res.end();
+  } else if (req.url === "/services") {
+    res.write("Welcome to Services Page");
+    res.end();
+  }
+
+  // Not Found Route
+  else {
+    res.write("404 Page Not Found");
+    res.end();
+  }
 });
 
 const fs = require("fs");
