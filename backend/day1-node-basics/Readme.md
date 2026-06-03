@@ -12,7 +12,14 @@ Same language frontend + backend (JavaScript)
 🧪 Important Commands
 
 Command Purpose
+
 node index.js Run node app
 npm init -y Initialize project
 npm install Install packages
 npm uninstall Remove package
+
+Automatically restarts server.
+
+npm install nodemon
+
+npx nodemon index.js
