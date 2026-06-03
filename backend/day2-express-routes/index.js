@@ -44,7 +44,7 @@ app.get("/search", (req, res) => {
 
 app.get("/profile", (req, res) => {
   res.json({
-    name: "Vishal",
+    name: "Jugnu",
     role: "Frontend Developer",
     city: "Ahmedabad",
   });
